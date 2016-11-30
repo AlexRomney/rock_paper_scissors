@@ -1,0 +1,91 @@
+body {
+  background-color: #01331a;
+  font-family: 'Baloo Chettan', cursive;
+}
+
+#welcome {
+  color: #ffe0da;
+}
+
+#win-lose {
+  text-align: center;
+  color: #ffe0da;
+}
+
+#player, #computer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#player span, #computer span {
+  color: #ffe0da;
+  border-bottom: 10px solid lightblue;
+  font-size: 3.56rem;
+  line-height: 1.1;
+}
+
+#rock {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+#paper {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+#scissors {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.angry-robot {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.rowy {
+  background-color: #007e94;
+}
+
+.result {
+  width: 300px;
+  height: 300px;
+  margin-top: 25px;
+  border-radius: 15%;
+
+}
+
+.polls {
+  color: #ffe0da;
+}
+
+.option-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-title {
+  border-left: 4px solid lightblue;
+  border-right: 4px solid lightblue;
+  border-bottom: 4px solid lightblue;
+  padding-bottom: 10px;
+  margin-top: 0;
+  color: #ffe0da;
+}
+
+.option {
+  color: #ffe0da;
+}
+
+hr {
+  height: 3px !important;
+  color: lightblue !important;
+  background-color: lightblue !important;
+}

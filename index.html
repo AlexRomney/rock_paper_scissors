@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title> Rock Paper Scissors Game </title>
+  <link href='assets/stylesheets/app.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class='rowy'>
+    <hr />
+    <div class='container center'>
+      <div class='row'>
+        <div class='col s4 polls'>
+          <h3 id='winner-count'> Wins: 0 </h3>
+        </div>
+        <div class='col s4'>
+          <h3 id='tie-count' class='polls'> Ties: 0 </h3>
+        </div>
+        <div class='col s4 polls'>
+          <h3 id='loser-count'> Losses: 0 </h3>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <div class='container center'>
+    <div class='row'>
+      <div class='col s8 offset-s2 center'>
+        <h1 class='main-title'> Rock | Paper | Scissors </h1>
+        <h5 class='center' id='welcome'> Prepare Yourself! </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class='row center'>
+    <div class='col s6'>
+      <div id='player'>
+        <span class=''> You! </span>
+      </div>
+      <h5 class='option'> Pick Your Poison: </h5>
+      <div class='option-images center'>
+        <img id='rock' onclick="userChoice('rock')" src='assets/images/rock_image.png' alt='Image of a cartoon rock'>
+        <img id='paper' onclick="userChoice('paper')" src='assets/images/paper_image.jpeg' alt='Image paper'>
+        <img id='scissors' onclick="userChoice('scissors')" src='assets/images/scissor_image.png' alt='Image of scissors'>
+      </div>
+    </div>
+    <div class='col s6'>
+      <div id='computer'>
+        <span> Computer! </span>
+      </div>
+      <h5 class='option'> You're Going Down! </h5>
+      <img class='angry-robot' src='assets/images/angry_robot.jpeg' alt="Angry robot picture" />
+    </div>
+  </div>
+  <hr />
+
+<h2 id='win-lose'> </h2>
+<div class='container'>
+  <div class='row'>
+    <div class='col s6'>
+      <div class='result' id=player-box> </div>
+    </div>
+    <div class='col s6'>
+      <div class='result right' id='comp-box'> </div>
+    </div>
+  </div>
+</div>
+
+  <script src='assets/javascripts/app.js'> </script>
+</body>
+
+</html>
