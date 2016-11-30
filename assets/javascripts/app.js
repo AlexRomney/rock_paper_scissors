@@ -49,33 +49,33 @@ function game(user, computer) {
  else if (user === 'rock') {
    switch(computer) {
      case 'paper':
-       result = 'You Lose!'
+       result = 'HA! HA! You Lose!'
        losses++
        break;
      case 'scissors':
-       result = 'You Win!'
+       result = 'You Win, But You Got Lucky!'
        wins++
        break;
    }
  } else if(user === 'paper') {
      switch(computer) {
        case 'rock':
-         result = 'You Win!'
+         result = 'Boo! You Win!'
          wins++
          break;
        case 'scissors':
-           result = 'You Lose!'
+           result = 'Loser! You Lose!'
            losses++
          break;
      }
  } else {
    switch(computer) {
      case 'rock':
-       result = 'You Lose!'
+       result = 'Pffft! You Lose!'
        losses++
        break;
      case 'paper':
-       result = 'You Win!'
+       result = 'Ah Man! You Win!'
        wins++
        break;
    }
@@ -85,9 +85,6 @@ function game(user, computer) {
   loserCount.innerText = "Losses: " + losses;
   tieCount.innerText = "Ties: " + ties;
 }
-
-var choice = computerChoice();
-console.log('The computer selected: ' + choice);
 
 function getName() {
   var name = prompt('Welcome to Rock, Paper, Scissors! What is your name?');
